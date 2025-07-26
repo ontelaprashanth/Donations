@@ -1,0 +1,79 @@
+/* assets/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe6ba 0%, #ffa07a 100%);
+    font-family: 'Roboto', sans-serif;
+    color: #3e1d0a;
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(40px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.93);
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(255,140,73,0.15);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Julius Sans One', serif;
+    font-size: 2.5rem;
+    color: #d98007;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.devotion-img {
+    width: 120px;
+    margin-bottom: 18px;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(217,128,7,0.11);
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    color: #5e3415;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(90deg, #dfa92f 0%, #f19e4f 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.4s, transform 0.3s;
+}
+
+.btn:hover, .btn:focus {
+    background: linear-gradient(90deg, #f19e4f 0%, #dfa92f 100%);
+    transform: scale(1.06);
+    outline: none;
+}
+
+@media (max-width: 770px) {
+  .container {
+    margin: 20px;
+    padding: 16px;
+    max-width: 98vw;
+  }
+  h1 { font-size: 1.4rem; }
+  .devotion-img { width: 70px;}
+  .btn { font-size: 0.96rem; padding: 0.8em 1.6em;}
+}
